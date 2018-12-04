@@ -42,5 +42,32 @@ main {
             }
           } */
 
-
+          header{
+            width:100%;
+            grid-area: header;
+            margin: 5px auto;
+            background-color: white;
+            position: relative
+        }
+        header img{
+            /* width: 150px; */
+            height: 150px;
+        }
+        header h1, header figure{
+            display: inline;
+        }
+        .title{
+            font-size: 70px;
+            font-weight: lighter;
+            font: 80px/100px;
+        }
+        .header-shadow{
+            width:100%; 
+            position: absolute; 
+            z-index: -1;
+            bottom: 3px;
+            border-bottom: 2px solid rgba(0, 0, 0, 1);
+            box-shadow: 0px 5px 10px 0px rgb(0,0,0);
+            margin: 8px auto 0px auto;
+        }
 
