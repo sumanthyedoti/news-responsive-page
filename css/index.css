@@ -70,6 +70,7 @@ header h1, header figure{
     box-shadow: 0px 5px 10px 0px rgb(0,0,0);
     margin: 8px auto 0px auto;
 }
+
 .nav{
     width: 100%;
     grid-area: nav;
@@ -123,4 +124,38 @@ header h1, header figure{
 .banner-layer .banner-layer-text{
     font-size: 20px;
     color: #555;
+}
+
+.top-news{
+    grid-area: top-news;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.top-news-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: rgb(80, 80, 80);
+    border-bottom: 2px solid rgba(50,50,50, 0.4);
+}
+.top-news-list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: safe; */
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    border-bottom: 2px solid rgba(100, 100, 100, 0.6);
+}
+.top-news-list-item{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.6);   
+}
+.top-news-list-item:last-child{
+    padding-bottom: 15px;
+    border-bottom: none;   
 }
