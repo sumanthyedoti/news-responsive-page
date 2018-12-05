@@ -12,12 +12,16 @@ body{
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+h1, h2, h3, h4{
+    padding: 0px;
+    margin: 0px;
+}
 main {
     width:1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 50px 500px auto auto 200px auto auto;
+    grid-template-rows: 200px 50px 500px auto auto auto auto auto;
     grid-gap: 10px;
     grid-template-areas:
       "header"
@@ -213,4 +217,48 @@ header h1, header figure{
     font-size: 20px;
     font-weight: bolder;
     color: rgb(70, 70, 70)
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    color: rgb(40, 40, 40);
+    font-size: 20px;
+}
+.weather-place{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+}
+.weather-condition{
+    font-size: 22px;
+    font-weight: 200;
+    color: rgb(50, 50, 50);
+}
+.weather-img-and-temp{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5%;
+}
+.weather-img{
+    height: 150px;
+}
+.weather-temp{
+    align-self: center;
+    font-size: 50px;
+    color: rgb(50, 50, 50)
+}
+.weekly-weather-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.weekly-weather-table tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+.weekly-weather-img{
+    width: 200px;
 }
