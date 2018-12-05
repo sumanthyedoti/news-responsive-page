@@ -34,7 +34,7 @@ main {
       "top-news"
       "table"
       "weather"
-      "latest-new"
+      "latest-news"
       "footer";
   }
         /* @media (min-width: 300px){
@@ -186,6 +186,9 @@ header img{
     border-bottom: none;   
 }
 
+.table{
+    grid-area: table;
+}
 .result-table {
     width: 100%;
     display: flex;
@@ -320,6 +323,7 @@ header img{
 }
 footer{
     position: relative;
+    grid-area: footer;
     width: 100%;
     padding: 20px 0px;
     background-color: white;
