@@ -19,6 +19,7 @@ h1, h2, h3, h4{
     padding: 0px;
     margin: 0px;
 }
+/* @media screen and (min-width: 769px) and (max-width: 1280){ */
 main {
     /* width:100%; */
     margin: 0 auto;
@@ -36,28 +37,7 @@ main {
       "latest-news"
       "footer";
   }
-        /* @media (min-width: 300px){
-            .container{
-              grid-template-columns: auto 1fr;
-              grid-template-rows: auto 1fr auto;
-              grid-template-areas:
-                "advert header"
-                "advert content"
-                "advert footer";
-            }
-          }
-          
-          @media (min-width: 400px){
-            .container{
-            
-              grid-template-areas:
-                "advert header"
-                "advert content"
-                "advert footer";
-            
-            }
-          } */
-
+         
 header{
     /* width: 100%; */
     grid-area: header;
@@ -72,7 +52,7 @@ header{
     justify-content: start;
     margin: 0px;
 }
-header img{
+.header-content img{
     /* width: 150px; */
     height: 150px;
 }
@@ -112,7 +92,7 @@ header img{
     color: rgba(0, 0, 0, 0.6);
 }
 
-.banner {
+ .banner {
     grid-area: banner;
     width:100%;
     margin: 20px auto;
@@ -122,13 +102,12 @@ header img{
 }
 .banner-img {
     width: 100%; 
-    object-fit: cover;
-    object-position: center;
-    min-width: 1000px;
+    /* object-fit: cover; */
+    /* object-position: center; */
     display: block;
     position: absolute;
-    transform: translateY(-40px);
-    /* z-index: -20; */
+    /* transform: translateY(-40px); */
+    z-index: -20; 
     top:-150px;
 }
 .banner-layer{
@@ -139,7 +118,7 @@ header img{
     position: absolute;
     bottom: 0px;
     padding: 0px 10px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 .banner-layer .banner-layer-title {
     font-size: 28px;
@@ -149,7 +128,7 @@ header img{
 .banner-layer .banner-layer-text{
     font-size: 20px;
     color: #555;
-}
+} 
 
 .top-news{
     grid-area: top-news;
@@ -367,3 +346,19 @@ footer{
     box-shadow: 0px 5px 10px 0px rgb(0,0,0);
     margin: 8px auto 0px auto;
 }
+/* } */
+
+/* @media screen and (min-width: 480px) and (max-width: 768px) {
+    
+  } */
+  /*
+  @media (min-width: 400px){
+    .container{
+    
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    
+    }
+  } */
