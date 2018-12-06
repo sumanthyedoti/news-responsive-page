@@ -59,7 +59,6 @@ header{
 .title{
     font-size: 5.5vw;
     font-weight: lighter;
-    /* font: 80px/100px; */
     align-self: center;
 }
 .header-shadow{
@@ -95,7 +94,7 @@ header{
  .banner {
     grid-area: banner;
     width:100%;
-    margin: 0px auto;
+    margin: 10px auto;
     overflow:hidden;
     position:relative;
     height:500px;
@@ -143,14 +142,13 @@ header{
     justify-content: space-between;
     padding: 0px 10px;
     font-size: 28px;
-    font-weight: lighter;
-    color: rgb(80, 80, 80);
-    border-bottom: 2px solid rgba(50,50,50, 0.4);
+}
+.top-news-list p{
+margin: 12px;
 }
 .top-news-list{
     display: flex;
     flex-direction: column;
-    /* justify-content: safe; */
     padding: 10px;
     font-size: 20px;
     color: rgb(100, 100, 100);
@@ -168,7 +166,6 @@ header{
 .table{
     grid-area: table;
 }
-
 .result-table {
     width: 100%;
     display: flex;
@@ -349,19 +346,4 @@ footer{
     box-shadow: 0px 5px 10px 0px rgb(0,0,0);
     margin: 8px auto 0px auto;
 }
-/* } */
 
-/* @media screen and (min-width: 480px) and (max-width: 768px) {
-    
-  } */
-  /*
-  @media (min-width: 400px){
-    .container{
-    
-      grid-template-areas:
-        "advert header"
-        "advert content"
-        "advert footer";
-    
-    }
-  } */
